@@ -1,0 +1,113 @@
+#root {
+   
+  margin: 0 auto;
+   }
+ /* Main container */
+#container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 60px;
+  background: #647FBC;
+  border-radius: 12px;
+
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+h2{
+  font-family: 'Courier New', monospace;
+  font-size: 30px; /* optional */
+  font-weight: bold; /* optional */
+  color: FAFDD6; /* optional */
+  
+}
+/* Subtitle */
+.subtitle {
+  color: #000000; /* red-400 */
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ==================== */
+/* Password Box Section */
+/* ==================== */
+.password-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.password-box input {
+  color: #222;  
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-right: none;             /* merge with button */
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+  background-color: #fff;         /* white background */
+  height: 43px;                   /*  same height as button */
+  box-sizing: border-box;
+  outline: none;                  /* remove blue outline */
+  transition: border-color 0.3s;
+}
+.password-box input::placeholder {
+  color: #9ca3af;   /* light gray (you can choose darker) */
+  opacity: 1;       /* make sure it's visible */
+}
+/* Highlight input when focused */
+.password-box input:focus {
+  border-color: #2563eb;          /* blue border when focused */
+}
+
+/* Copy button */
+#copy-btn {
+  padding: 0 15px;
+  background: #0a2e7a;
+  color: white;
+  border: 2px solid #2563eb;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  height: 45px;                   /*  equal height */
+  transition: background 0.3s, transform 0.1s;
+}
+ 
+
+#copy-btn:active {
+  transform: scale(0.97);         /* click effect */
+}
+
+/* ==================== */
+/* Range Slider Section */
+/* ==================== */
+.range-box {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.range-box input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.range-box label {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* ==================== */
+/* Options Section */
+/* ==================== */
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.options label {
+  margin-left: 5px;
+  cursor: pointer;
+}
